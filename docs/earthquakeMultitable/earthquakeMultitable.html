@@ -17,7 +17,7 @@
 	<style type="text/css">* { font-family: 'Raleway', sans-serif; }</style>
 
 	<script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
-	<script src="earthquakeWDC.js" type="text/javascript"></script>
+	<script src="earthquakeMultitable.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -26,6 +26,24 @@
 			<div class="text-center col-8 col-offset-2">
 				<h1><i class="fas fa-globe"></i></h1>
 				<h2>Earthquake API Web Data Connector for Tableau</h2>
+
+				<form>
+					<div class="row">
+						<div class="col">
+							<div class="form-group">
+								<label for="start-date-one" class="text-center">Start Date</label>
+								<input type="text" class="form-control" id="start-date-one" value="2017-01-01">
+							</div>
+						</div>
+						<div class="col">
+							<div class="form-group">
+								<label for="end-date-one">End Date</label>
+								<input type="text" class="form-control" id="end-date-one" value="2017-01-31">
+							</div>
+						</div>
+					</div>
+				</form>
+
 				<button type="button" id="submitButton" class="btn btn-lg btn-success" style="margin: 10px;"><i class="fas fa-lg fa-download"></i> Get Earthquake Data!</button>
 			</div>
 		</div>
