@@ -21,7 +21,7 @@
 			id: "price_btc",
 			dataType: tableau.dataTypeEnum.float
 		}, {
-			id: "volume_24h_usd",
+			id: "24h_volume_usd",
 			dataType: tableau.dataTypeEnum.float
 		}, {
 			id: "market_cap_usd",
@@ -31,6 +31,9 @@
 			dataType: tableau.dataTypeEnum.float
 		}, {
 			id: "total_supply",
+			dataType: tableau.dataTypeEnum.float
+		}, {
+			id: "max_supply",
 			dataType: tableau.dataTypeEnum.float
 		}, {
 			id: "percent_change_1h",
@@ -43,7 +46,7 @@
 			dataType: tableau.dataTypeEnum.float
 		}, {
 			id: "last_updated",
-			dataType: tableau.dataTypeEnum.datetime
+			dataType: tableau.dataTypeEnum.string
 		}];
 
 		var tableSchema = {
@@ -69,14 +72,16 @@
 					"rank": feat[i].rank,
 					"price_usd": feat[i].price_usd,
 					"price_btc": feat[i].price_btc,
-					"volume_24h_usd": feat[i].volume_24h_usd,
+					"24h_volume_usd": feat[i]["24h_volume_usd"],
 					"market_cap_usd": feat[i].market_cap_usd,
 					"available_supply": feat[i].available_supply,
 					"total_supply": feat[i].total_supply,
+					"max_supply": feat[i].max_supply,
 					"percent_change_1h": feat[i].percent_change_1h,
 					"percent_change_24h": feat[i].percent_change_24h,
 					"percent_change_7d": feat[i].percent_change_7d,
 					"last_updated": feat[i].last_updated
+
 				});
 			}
 
