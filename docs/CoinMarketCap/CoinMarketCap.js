@@ -21,7 +21,7 @@
 			id: "price_btc",
 			dataType: tableau.dataTypeEnum.float
 		}, {
-			id: "24h_volume_usd",
+			id: "volume_24h_usd",
 			dataType: tableau.dataTypeEnum.float
 		}, {
 			id: "market_cap_usd",
@@ -69,7 +69,7 @@
 					"rank": feat[i].rank,
 					"price_usd": feat[i].price_usd,
 					"price_btc": feat[i].price_btc,
-					"24h_volume_usd": feat[i].volume_24h_usd,
+					"volume_24h_usd": feat[i].volume_24h_usd,
 					"market_cap_usd": feat[i].market_cap_usd,
 					"available_supply": feat[i].available_supply,
 					"total_supply": feat[i].total_supply,
