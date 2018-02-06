@@ -57,7 +57,7 @@
 
 	myConnector.getData = function(table, doneCallback) {
 		$.getJSON("https://api.coinmarketcap.com/v1/ticker/?limit=0", function(resp) {
-			var feat = resp.features,
+			var feat = resp,
 				tableData = [];
 
 			// Iterate over the JSON object
